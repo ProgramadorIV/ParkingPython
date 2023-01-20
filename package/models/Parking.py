@@ -116,6 +116,11 @@ class Parking():
         plazas_abonables = [plaza for plaza in self.plazas[tipo_vehiculo] if plaza.estado == EstadoPlaza.LIBRE or plaza.estado == EstadoPlaza.OCUPADA]
         if len(plazas_abonables) > 0:
             abonado = Abonado(dni, nombre, apellidos, matricula, plazas_abonables[0], tarjeta, tipo_abono, email)
+
+            self.abonados[abonado.pin] = abonado
+            abonado.plaza.estado.ABONOLIBRE
+
+            self.save()
             return abonado
 
         return None
