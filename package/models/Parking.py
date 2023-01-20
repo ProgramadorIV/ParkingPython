@@ -14,6 +14,7 @@ class Parking():
         'movilidad_reducida': [Plaza(f'C-{i+1}', 'movilidad_reducida', 0.10) for i in range (0, int(numero_plazas*0.15))],}
         self.tickets = {}
         self.cobros = []
+        self.abonos = {}
         pass
 
     def mostrar_plazas(self):
@@ -72,6 +73,9 @@ class Parking():
         fichero = open('parking.pckl', 'wb')
         pickle.dump(self, fichero)
         fichero.close()
+
+    def aparcar_abonado():
+        pass
 
 
 def restaurar_parking(numero_plazas):

@@ -96,6 +96,9 @@ while seleccion1 != 0:
             elif seleccion2 == 3:
                 
                 #DEPOSITAR ABONADOS
+                matricula = str(input('Introduzca su matrícula: '))
+                dni = str(input('Introduzca su dni: '))
+                
                 pass
 
 
