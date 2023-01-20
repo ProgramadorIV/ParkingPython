@@ -1,12 +1,12 @@
 class Plaza ():
 
-    matricula = None
-    precio = None
+    estado = None
 
-    def __init__(self, nombre, tipo_vehiculo, precio):
+    def __init__(self, nombre, tipo_vehiculo, precio, estado):
         self.nombre = nombre
         self.precio = precio
         self.tipo_vehiculo = tipo_vehiculo
+        self.estado = estado
 
     def __str__(self) :
 

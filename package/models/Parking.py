@@ -78,8 +78,7 @@ class Parking():
 
         for abonado in self.abonos:
             if abonado.matricula == matricula and abonado.dni == dni:
-                abonado
-        pass
+                pass
 
 
 def restaurar_parking(numero_plazas):
