@@ -1,14 +1,24 @@
 from datetime import datetime
+from models.Plaza import Plaza
 import random
 class Ticket():
     def __init__(self, matricula, plaza):
         self.matricula = matricula
-        self.fecha = datetime.now
+        self.fecha = datetime.now()
         self.plaza = plaza
         self.pin = random.randrange(0, 1000000)
         
     def __str__(self):
-       return f"Soy una galleta {self.matricula} y {self.plaza}."
+       return f"""
+       ***********************************************
+       *                                             *
+       *    MATRICULA: {self.matricula}              *
+       *    FECHA: {self.fecha}                      *
+       *    PLAZA: {self.plaza.nombre}               *
+       *    PIN:   {self.pin}                        *
+       *                                             *
+       ***********************************************
+       """
    
     @property
     def get_matricula(self):
