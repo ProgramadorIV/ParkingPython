@@ -74,7 +74,11 @@ class Parking():
         pickle.dump(self, fichero)
         fichero.close()
 
-    def aparcar_abonado():
+    def aparcar_abonado(self, matricula, dni):
+
+        for abonado in self.abonos:
+            if abonado.matricula == matricula and abonado.dni == dni:
+                abonado
         pass
 
 
