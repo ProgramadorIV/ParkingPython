@@ -1,7 +1,7 @@
 from models.Parking import Parking, restaurar_parking
 from models.Abonado import Abonado
-from models.EstadoPlaza import EstadoPlaza
-from models.TipoAbono import TipoAbono
+from models.auxiliares.EstadoPlaza import EstadoPlaza
+from models.auxiliares.TipoAbono import TipoAbono
 from datetime import datetime
 import pickle
 
