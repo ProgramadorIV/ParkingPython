@@ -13,7 +13,7 @@ class Ticket():
        ***********************************************
        *                                             *
        *    MATRICULA: {self.matricula}              *
-       *    FECHA: {self.fecha}                      *
+       *    FECHA: {self.fecha.strftime("%A %d de %B del %Y - %H:%M")}                      *
        *    PLAZA: {self.plaza.nombre}               *
        *    PIN:   {self.pin}                        *
        *                                             *
